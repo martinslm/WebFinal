@@ -1,0 +1,57 @@
+body 
+		{  
+		margin:0;  
+		padding:0;  
+		font-family:tahoma;  
+		font-size:80%; 
+		} 
+ 
+#form1 fieldset 
+	{  
+	width: 50%;  
+	margin-top: 0px;  
+	margin-right: auto;  
+	margin-bottom: 0px;  
+	margin-left: auto; 
+	} 
+ 
+#form1 label 
+	{  
+	text-align: right;  
+	float: left;  
+	width: 150px;  
+	margin-bottom: 5px; 
+	} 
+ 
+ 
+#form1 input 
+	{  
+	float: left;  
+	border: 1px solid #666666;  
+	margin-bottom: 5px; 
+	} 
+
+#form1 br 
+	{  
+	clear: left; 
+	} 
+	
+#data 
+	{  
+	width:50%;  
+	border:1px solid #666666;  
+	margin:0 auto 0 auto; 
+	} 
+
+#data th 
+	{  
+	background:#666666;  
+	color:white; 
+	} 
+
+#data td 
+	{  
+	background:white;  
+	color:#666666;  
+	border:1px solid #666666; 
+	} 
