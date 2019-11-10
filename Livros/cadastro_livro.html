@@ -1,36 +1,48 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="utf8">
-        <title>Cadastro</title>
-        <link href="estilos/main.css" rel="stylesheet" type="text/css" /> 
-    </head>
-<body>
-        <h1><center>Cadastro de Fornecedores</center> </h1> 
-        <form 
+    
 
-                id    ="form1" 
-                name  ="form1" 
-                method="post" action="cadastro_fornecedor.php">   
-                <fieldset>   
-                        <legend>Cadastro</legend>     
-                        <label for="Razao">      Razao:              </label>   <input type="text"  name="Razao"              id="Razao"             />   <br />
-                        <label for="Fantasia">   Fantasia:           </label>   <input type="text"  name="Fantasia"           id="Fantasia"          />   <br />
-                        <label for="Endereço">   Endereço:           </label>   <input type="text"  name="Endereco"           id="Endereco"          />   <br />
-                        <label for="Complemento">Complemento:        </label>   <input type="text"  name="Complemento"        id="Complemento"       />   <br />
-                        <label for="Bairro">     Bairro:             </label>   <input type="text"  name="Bairro"             id="Bairro"            />   <br />
-                        <label for="Cidade">     Cidade:             </label>   <input type="text"  name="Cidade"             id="Cidade"            />   <br />
-                        <label for="CEP">        CEP:                </label>   <input type="text"  name="CEP"                id="CEP"               />   <br />
-                        <label for="UF">         UF:                 </label>   <input type="text"  name="UF"                 id="UF"                />   <br />
-                        <label for="Fone">       Fone:               </label>   <input type="Tel"   name="Fone"               id="Fone"              />   <br />
-                        <label for="Fax">        Fax:                </label>   <input type="Tel"   name="Fax"                id="Fax"               />   <br />
-                        <label for="Email">      Email:              </label>   <input type="E-mail" name="Email"              id="Email"             />   <br />
-                        <label for="www">        www:                </label>   <input type="Url"   name="www"                id="www"               />   <br />
-                        <label for="cnpj">       cnpj:               </label>   <input type="text"  name="cnpj"               id="cnpj"              />   <br />
-                        <label for="InscricaoEstadual">Inscr.Estadual:</label>  <input type="text" name="InscricaoEstadual" id="InscricaoEstadual" />   <br />
-                        <label> </label>                          
-                        <input type="submit"name="enviar" value="Cadastrar" />   
-                 </fieldset> 
-        </form>   
+<head>
+        <meta charset="utf8">
+                <title>Cadastro</title>
+        <link href="../estilos/bootstrap.css" rel="stylesheet" />
+        <link href="../estilos/signin.css" rel="stylesheet" />
+</head>
+
+<body>
+        <div class="container-cadastros">
+                <form id="form-biblio" name="form1" method="post" action="cadastro_livro.php">
+                        <legend>
+                                <h1>Cadastro de livros</h1>
+                        </legend>
+                        <input type="text" name="Razao" id="Razao" class="form-control" placeholder="Razao" required />
+                        <br />
+                        <input type="text" name="Fantasia" id="Fantasia" class="form-control" placeholder="Fantasia"
+                                required /> <br />
+                        <input type="text" name="Endereco" id="Endereco" class="form-control" placeholder="Endereço"
+                                required /> <br />
+                        <input type="text" name="Complemento" id="Complemento" class="form-control"
+                                placeholder="Complemento" required /> <br />
+                        <input type="text" name="Bairro" id="Bairro" class="form-control" placeholder="Bairro"
+                                required /> <br />
+                        <input type="text" name="Cidade" id="Cidade" class="form-control" placeholder="Cidade"
+                                required /> <br />
+                        <input type="text" name="CEP" id="CEP" class="form-control" placeholder="CEP" required /> <br />
+                        <input type="text" name="UF" id="UF" class="form-control" placeholder="UF" required /> <br />
+                        <input type="Tel" name="Fone" id="Fone" class="form-control" placeholder="Fone" required />
+                        <br />
+                        <input type="Tel" name="Fax" id="Fax" class="form-control" placeholder="Fax" required /> <br />
+                        <input type="E-mail" name="Email" id="Email" class="form-control" placeholder="Email"
+                                required /> <br />
+                        <input type="Url" name="www" id="www" class="form-control" placeholder="Url (www)" required />
+                        <br />
+                        <input type="text" name="cnpj" id="cnpj" class="form-control" placeholder="CNPJ" required />
+                        <br />
+                        <input type="text" name="InscricaoEstadual" id="InscricaoEstadual" class="form-control"
+                                placeholder="InscricaoEstadual" /> <br />
+                        <button class="btn btn-lg btn-danger btn block" type="submit" name="enviar">Cadastrar</button>
+                </form>
+        </div>
 </body>
+
 </html>
