@@ -2,6 +2,7 @@
         include("../includes/conexao.php"); 
 
         $login = $_POST[Login];
+        $senha = md5($_POST[Senha]);
 
 $sqlValid  = "SELECT * FROM usuario WHERE login = '$login'";
 
@@ -19,7 +20,7 @@ $queryValid = mysqli_query($serv,$sqlValid);
         $sql = "INSERT INTO usuario VALUES ( null, 
                                                '$login', 
                                                '$_POST[Nome]',
-                                               '$_POST[Senha]'
+                                               '$senha'
                                                 )"; 
         $query = mysqli_query($serv,$sql); 
         if ($query) 

@@ -1,7 +1,7 @@
 <?php 
 include("includes/conexao.php"); 
 $login = $_POST['Usuario'];
-$senha = $_POST['Senha'];
+$senha = md5($_POST['Senha']);
 
 $sql  = "SELECT * FROM usuario WHERE login = '$login' AND senha = '$senha'";
 

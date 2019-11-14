@@ -1,24 +1,30 @@
 <?php 
-        include("includes/conexao.php"); 
-        $sql = "INSERT INTO fornecedor VALUES ( null, 
-                                               '$_POST[Razao]', 
-                                               '$_POST[Fantasia]',
-                                               '$_POST[Endereco]',
-                                               '$_POST[Complemento]',
-                                               '$_POST[Bairro]',
-                                               '$_POST[Cidade]',
-                                               '$_POST[CEP]',
-                                               '$_POST[UF]',
-                                               '$_POST[Fone]',
-                                               '$_POST[Fax]',
-                                               '$_POST[Email]',
-                                               '$_POST[www]',
-                                               '$_POST[cnpj]',
-                                               '$_POST[InscricaoEstadual]'
-                                                )"; 
+    include("../includes/conexao.php"); 
+
+    $nome = $_POST[Nome];
+
+    $sqlValid  = "SELECT * FROM autor WHERE NomeAutor = '$nome'";
+
+    $queryValid = mysqli_query($serv,$sqlValid); 
+
+      if (mysqli_num_rows($queryValid)>0){
+
+        echo"<script language='javascript' type='text/javascript'>
+        alert('Já existe um autor cadastrado com esse nome!');window.location
+        .href='listar_autor.php';</script>";
+        die(); 
+      }
+      else
+      {
+        $sql = "INSERT INTO autor VALUES ( null, 
+                                               '$nome')"; 
+
         $query = mysqli_query($serv,$sql); 
         if ($query) 
-                header("Location: listar_fornecedores.php"); 
+                header("Location: listar_autor.php"); 
         else 
-                echo "Erro ao inserir registro"; 
+                echo "<script language='javascript' type='text/javascript'>
+        alert('Erro ao inserir registro');window.location
+        .href='cadastro_autor.html';</script>"; 
+      }
 ?>  

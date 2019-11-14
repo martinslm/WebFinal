@@ -1,38 +1,25 @@
-<!DOCTYPE html>
+<HTML><!DOCTYPE html>
 <html lang="pt-br">
-     
-
-<head>
+    <head>
         <meta charset="utf8">
-                <title>Login</title>
+        <title>Login</title>
         <link rel="icon" href="../imagem/favicon.png" type="imagem/x-png">
-        <link href="estilos/bootstrap.css" rel="stylesheet" />
-        <link href="estilos/signin.css" rel="stylesheet" />
-</head>
-
+        <link href="estilos/main.css" rel="stylesheet" type="text/css" /> 
+    </head>
 <body>
-        <div class="container">
-                <form id="form-biblio" name="form1" method="post" action="login.php">
-                        <legend>
-                                <center>
-                                        <h1>Login</h1>
-                                </center>
-                        </legend>
-                        <input type="text" name="Usuario" id="Usuario" class="form-control" placeholder="Usuário"
-                                required /> <br />
-                        <input type="password" name="Senha" id="Senha" class="form-control" placeholder="Senha"
-                                required /> <br />
-                        <button class="btn btn-lg btn-danger btn block" type="submit" name="enviar">Acessar
-
-                        </button>
-                        <br>
-                        <center>
-                                <a href="./Usuarios/cadastro_usuario.html">Cadastre-se</a>
-                        </center>
-                </form>
-        </div>
+         <form 
+                id    ="form1" 
+                name  ="form1" 
+                method="post" action="login.php">   
+                <fieldset>   
+                        <legend><h1>Login</h1></legend>     
+                        <label for="Usuario">      Usuario:              </label>   <input type="text"  name="Usuario"  id="Usuario"/>   <br />
+                        <label for="Senha">   Senha:           </label>   <input type="password"  name="Senha" id="Senha"/>   <br />
+                        <label> </label>                          
+                        <input type="submit"name="enviar" value="Acessar" />  
+                 </fieldset>
+        </form>   
 </body>
-
 </html>
 
 <?php
