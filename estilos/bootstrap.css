@@ -1618,29 +1618,34 @@ pre code {
   .container-user {
     width: 400px;
     height: 320px;
+    border-radius: 20px;
   }
 }
 @media (min-width: 768px) {
   .container-cadastros {
     width: 800px;
     height: 900px;
+    border-radius: 20px;
   }
 }
 @media (min-width: 100px) {
   .container-cat {
     width: 350px;
     height: 250px;
+    border-radius: 20px;
   }
 }
 @media (min-width: 992px) {
   .container {
     width: 970px;
     background-color: white;
+    border-radius: 20px;
   }
 }
 @media (min-width: 1200px) {
   .container {
     width: 350px;
+    border-radius: 20px;
   }
 }
 

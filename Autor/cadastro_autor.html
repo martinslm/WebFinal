@@ -7,52 +7,52 @@
                 <title>Cadastro</title>
         <link href="../estilos/bootstrap.css" rel="stylesheet" type="text/css" />
         <link href="../estilos/signin.css" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
             </head>
 
 <body>
-        <div class="container-cadastros">
-                <form id="form-biblio" name="form1" method="post" action="cadastro_livro.php">
-                        <legend>
-                                <h1>Cadastro de Autor</h1>
-                        </legend>
-                        <input type="text" name="Razao" id="Razao" class="form-control" placeholder="Razao" required />
-                        <br />
-                        <input type="text" name="Fantasia" id="Fantasia" class="form-control" placeholder="Fantasia"
-                                required />
-                        <br />
-                        <input type="text" name="Endereco" id="Endereco" class="form-control" placeholder="Endereço"
-                                required />
-                        <br />
-                        <input type="text" name="Complemento" id="Complemento" class="form-control"
-                                placeholder="Complemento" required />
-                        <br />
-                        <input type="text" name="Bairro" id="Bairro" class="form-control" placeholder="Bairro"
-                                required />
-                        <br />
-                        <input type="text" name="Cidade" id="Cidade" class="form-control" placeholder="Cidade"
-                                required />
-                        <br />
-                        <input type="text" name="CEP" id="CEP" class="form-control" placeholder="CEP" required />
-                        <br />
-                        <input type="text" name="UF" id="UF" class="form-control" placeholder="UF" required />
-                        <br />
-                        <input type="Tel" name="Fone" id="Fone" class="form-control" placeholder="Fone" required />
-                        <br />
-                        <input type="Tel" name="Fax" id="Fax" class="form-control" placeholder="Fax" required />
-                        <br />
-                        <input type="E-mail" name="Email" id="Email" class="form-control" placeholder="Email"
-                                required />
-                        <br />
-                        <input type="Url" name="www" id="www" class="form-control" placeholder="Url (www)" required />
-                        <br />
-                        <input type="text" name="cnpj" id="cnpj" class="form-control" placeholder="cnpj" required />
-                        <br />
-                        <input type="text" name="InscricaoEstadual" id="InscricaoEstadual" class="form-control"
-                                placeholder="InscricaoEstadual" />
-                        <br />
-                        <button class="btn btn-lg btn-danger btn block" type="submit" name="enviar">Cadastrar</button>
-                </form>
-        </div>
+                <div class="container-cadastros">
+                                <form id="form-group col-md-4" name="form1" method="post" action="cadastro_livro.php">
+                                        <legend>
+                                                <h1>Cadastro de livros</h1>
+                                        </legend>
+                                        <input type="text" name="Razao" id="Razao" class="form-control" placeholder="Razao Social"
+                                                required />
+                                        <br />
+                                        <input type="text" name="Fantasia" id="Fantasia" class="form-control"
+                                                placeholder="Nome Fantasia" required />
+                                        <br />
+                                        <input type="text" name="Endereco" id="Endereco" class="form-control" placeholder="Endereço"
+                                                required />
+                                        <br />
+                                        <input type="text" name="Complemento" id="Complemento" class="form-control"
+                                                placeholder="Complemento" required /> <br />
+                                        <input type="text" name="Bairro" id="Bairro" class="form-control" placeholder="Bairro"
+                                                required />
+                                        <br />
+                                        <input type="text" name="Cidade" id="Cidade" class="form-control" placeholder="Cidade"
+                                                required />
+                                        <br />
+                                        <input type="tel" name="CEP" id="CEP" class="form-control cep-mask" placeholder="CEP"
+                                                required /> <br />
+                                        <input type="text" name="UF" id="UF" class="form-control" placeholder="UF" required /> <br />
+                                        <input type="Tel" name="Fone" id="Fone" class="form-control" placeholder="Fone" onkeypress="$(this).mask('(00) 0000-00009')" required />
+                                        <br />
+                                        <input type="Tel" name="Fax" id="Fax" class="form-control" placeholder="Fax" required /> <br />
+                                        <input type="E-mail" name="Email" id="Email" class="form-control" placeholder="Email"
+                                                required /> <br />
+                                        <input type="Url" name="www" id="www" class="form-control" placeholder="Url (www)" required />
+                                        <br />
+                                        <input type="text" minlength="14" maxlength="14" name="cnpj" id="cnpj" class="form-control" placeholder="CNPJ" onkeypress="$(this).mask('00.000.000/0000-00')" required  />
+                                        <br />
+                                        <input type="text" name="InscricaoEstadual" id="InscricaoEstadual" class="form-control"
+                                                placeholder="InscricaoEstadual" /> <br />
+                                        <button class="btn btn-lg btn-danger btn block" type="submit" name="enviar">Cadastrar</button>
+                                </form>
+                        </div>
 </body>
 
 </html>

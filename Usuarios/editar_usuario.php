@@ -3,6 +3,12 @@
         <meta charset="utf8">
         <title>alterar</title>
         <link href="estilos/main.css" rel="stylesheet" type="text/css" /> 
+        <link href="../estilos/bootstrap.css" rel="stylesheet" type="text/css" />
+        <link href="../estilos/signin.css" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <!--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"-->     
     </head>
 <body>
@@ -14,25 +20,19 @@
 	$linha = mysqli_fetch_array($query); 
 ?>  
  
-<h1><center>Alterar Usuário</center></h1> 
-<form id="form1" name="form1" method="post" action="alterar_usuario.php"> 
-
-<fieldset> 
-	<legend>Dados Usuário</legend> 
-    <input name="IdUsuario" id="IdUsuario" value="<?php echo $linha['idUsuario'];?>" type="hidden"/>
-
-	<label for="Nome">Nome: </label> 
-    <input type="text"  name="Nome" id="Nome" value="<?php echo $linha['nome'];?>" /><br /> 
-	
-    <label for="Login">Login:</label> 
-    <input type="text"  name="Login" id="Login"  value="<?php echo $linha['login'];?>"/><br/> 
-	<label for="Senha">     Senha:      </label> 
-    <input type="password"  name="Senha" id="Senha" value="<?php echo $linha['senha'];?>"/><br /> 
-	<input name="enviar" type="submit" class="btn btn-light" value="Alterar" /> 
-</fieldset> 
-</form>  
-
-
+ <div class="container-cadastros">
+                <form id="form-group col-md-4" name="form1" method="post" action="alterar_autor.php">
+                        <legend>
+                                <h1>Alterar Usuário</h1>
+                        </legend>
+                        <h1>Dados Usuário</h1>
+                        <input name="IdUsuario" id="IdUsuario" value="<?php echo $linha['idUsuario'];?>" type="hidden"/>
+                        <input type="text"  name="Nome" id="Nome" value="<?php echo $linha['nome'];?>" /><br />
+                        <input type="text"  name="Login" id="Login"  value="<?php echo $linha['login'];?>"/><br/>  
+                        <input type="password"  name="Senha" id="Senha" value="<?php echo $linha['senha'];?>"/><br /> 
+                        <button class="btn btn-lg btn-danger btn block" type="submit" name="enviar">Alterar</button>
+                </form>
+        </div>
 
 </body>
 </html> 

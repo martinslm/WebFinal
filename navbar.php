@@ -1,18 +1,4 @@
-<html>
-<!DOCTYPE html>
-
-<html lang="pt-br">
-
-</html>
-
-<head>
-    <meta charset="utf8">
-    <title>Biblioteca Online</title>
-    <link href="estilos/home.css" rel="stylesheet" />
-</head>
-
-<body>
-    <div class="nav">
+<div class="nav">
         <ul>
             <li><a href="#"> Home</a></li>
 
@@ -35,28 +21,25 @@
             <li><a href="#"> Autores</a>
 
                 <ul>
-                    <li><a href="Categoria/cadastro_categoria.html">Cadastro de Autor</a></li>
-                    <li><a href="Categoria/listar_categoria.php">Listar Autores</a></li>
+                    <li><a href="Autor/cadastro_autor.html">Cadastro de Autor</a></li>
+                    <li><a href="Autor/listar_autor.php">Listar Autores</a></li>
                 </ul>
             </li>
 
             <li><a href="#"> Filiais</a>
 
                 <ul>
-                    <li><a href="Categoria/cadastro_categoria.html">Cadastro de Filial</a></li>
-                    <li><a href="Categoria/listar_categoria.php">Listar Filiais</a></li>
+                    <li><a href="Filial/cadastro_filial.html">Cadastro de Filial</a></li>
+                    <li><a href="Filial/listar_filial.php">Listar Filiais</a></li>
                 </ul>
             </li>
 
             <li><a href="#"> Livros</a>
 
                 <ul>
-                    <li><a href="Categoria/cadastro_categoria.html">Cadastro de Livro</a></li>
-                    <li><a href="Categoria/listar_categoria.php">Listar Livros</a></li>
+                    <li><a href="Livros/cadastro_livro.html">Cadastro de Livro</a></li>
+                    <li><a href="Livros/listar_livro.php">Listar Livros</a></li>
                 </ul>
             </li>
         </ul>
     </div>
-</body>
-
-</html>

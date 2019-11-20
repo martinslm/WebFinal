@@ -7,11 +7,15 @@
                 <title>Cadastro</title>
         <link href="../estilos/bootstrap.css" rel="stylesheet" />
         <link href="../estilos/signin.css" rel="stylesheet" />
-            </head>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
 
 <body>
         <div class="container-cadastros">
-                <form id="form-biblio" name="form1" method="post" action="cadastro_livro.php">
+                <form id="form-group col-md-4" name="form1" method="post" action="cadastro_livro.php">
                         <legend>
                                 <h1>Cadastro de livros</h1>
                         </legend>
@@ -35,14 +39,14 @@
                         <input type="tel" name="CEP" id="CEP" class="form-control cep-mask" placeholder="CEP"
                                 required /> <br />
                         <input type="text" name="UF" id="UF" class="form-control" placeholder="UF" required /> <br />
-                        <input type="Tel" name="Fone" id="Fone" class="form-control" placeholder="Fone" required />
+                        <input type="Tel" name="Fone" id="Fone" class="form-control" placeholder="Fone" onkeypress="$(this).mask('(00) 0000-00009')" required />
                         <br />
                         <input type="Tel" name="Fax" id="Fax" class="form-control" placeholder="Fax" required /> <br />
                         <input type="E-mail" name="Email" id="Email" class="form-control" placeholder="Email"
                                 required /> <br />
                         <input type="Url" name="www" id="www" class="form-control" placeholder="Url (www)" required />
                         <br />
-                        <input type="text" name="cnpj" id="cnpj" class="form-control" placeholder="CNPJ" required />
+                        <input type="text" minlength="14" maxlength="14" name="cnpj" id="cnpj" class="form-control" placeholder="CNPJ" onkeypress="$(this).mask('00.000.000/0000-00')" required  />
                         <br />
                         <input type="text" name="InscricaoEstadual" id="InscricaoEstadual" class="form-control"
                                 placeholder="InscricaoEstadual" /> <br />
