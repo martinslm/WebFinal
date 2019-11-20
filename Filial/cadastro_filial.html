@@ -1,23 +1,58 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="utf8">
-        <title>Cadastro</title>
-        <link href="../estilos/main.css" rel="stylesheet" type="text/css" /> 
-    </head>
-<body>
-        <h1><center>Cadastro de Filiais</center> </h1> 
-        <form 
+    
 
-                id    ="form1" 
-                name  ="form1" 
-                method="post" action="cadastro_filial.php">   
-                <fieldset>   
-                        <legend>Cadastro</legend>     
-                        <label for="Nome">      Informe o nome da Filial:              </label>   <input type="text"  name="Nome"              id="Nome"             />   <br />
-                        <label> </label>                          
-                        <input type="submit"name="enviar" value="Cadastrar" />   
-                 </fieldset> 
-        </form>   
+<head>
+        <meta charset="utf8">
+                <title>Cadastro</title>
+        <link href="../estilos/bootstrap.css" rel="stylesheet" type="text/css" />
+        <link href="../estilos/signin.css" rel="stylesheet" />
+            </head>
+
+<body>
+        <div class="container-cadastros">
+                <form id="form-biblio" name="form1" method="post" action="cadastro_fornecedor.php">
+                        <legend>
+                                <h1>Cadastro de fornecedores</h1>
+                        </legend>
+                        <input type="text" name="Razao" id="Razao" class="form-control" placeholder="Razao" required />
+                        <br />
+                        <input type="text" name="Fantasia" id="Fantasia" class="form-control" placeholder="Fantasia"
+                                required />
+                        <br />
+                        <input type="text" na me="Endereco" id="Endereco" class="form-control" placeholder="Endereço"
+                                required />
+                        <br />
+                        <input type="text" name="Complemento" id="Complemento" class="form-control"
+                                placeholder="Complemento" required />
+                        <br />
+                        <input type="text" name="Bairro" id="Bairro" class="form-control" placeholder="Bairro"
+                                required />
+                        <br />
+                        <input type="text" name="Cidade" id="Cidade" class="form-control" placeholder="Cidade"
+                                required />
+                        <br />
+                        <input type="text" name="CEP" id="CEP" class="form-control" placeholder="CEP" required />
+                        <br />
+                        <input type="text" name="UF" id="UF" class="form-control" placeholder="UF" required />
+                        <br />
+                        <input type="Tel" name="Fone" id="Fone" class="form-control" placeholder="Fone" required />
+                        <br />
+                        <input type="Tel" name="Fax" id="Fax" class="form-control" placeholder="Fax" required />
+                        <br />
+                        <input type="E-mail" name="Email" id="Email" class="form-control" placeholder="Email"
+                                required />
+                        <br />
+                        <input type="Url" name="www" id="www" class="form-control" placeholder="Url (www)" required />
+                        <br />
+                        <input type="text" name="cnpj" id="cnpj" class="form-control" placeholder="cnpj" required />
+                        <br />
+                        <input type="text" name="InscricaoEstadual" id="InscricaoEstadual" class="form-control"
+                                placeholder="InscricaoEstadual" />
+                        <br />
+                        <button class="btn btn-lg btn-danger btn block" type="submit" name="enviar">Cadastrar</button>
+                </form>
+        </div>
 </body>
+
 </html>

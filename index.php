@@ -1,3 +1,15 @@
+<html>
+  <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <meta charset="utf8">
+                <title>Login</title>
+        <link rel="icon" href="../imagem/favicon.png" type="imagem/x-png">
+        <link href="estilos/bootstrap.css" rel="stylesheet" />
+            </head>
+
+<body>
+
 <?php
   $login_cookie = $_COOKIE['login'];
     if(isset($login_cookie)){
@@ -33,3 +45,5 @@
       echo"<h1>Atenção</h1><br>Para acessar essa página é necessário realizar o <a href='login.html'>login</a>.";
     }
 ?>
+</body>
+</html>
