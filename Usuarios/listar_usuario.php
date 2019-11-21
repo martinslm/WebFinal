@@ -2,44 +2,46 @@
     
 
 <head>
-	<meta charset="utf8">
-	        <title>Listagem</title>
-	<link href="../estilos/main.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<link href="../estilos/home.css" rel="stylesheet" />
+    <meta charset="utf8">
+            <title>Listagem de Usuários</title>
+    <link href="../estilos/main.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="../estilos/home.css" rel="stylesheet" />
 
-	<script type="text/javascript">
-		function confirmarExclusao(id) {
-			var resposta = confirm("Tem certeza que quer excluir o registro? Se o usuário a ser excluído estiver logado, a conexão será derrubada.");
-			if (resposta == false) {
-				window.location = "listar_usuario.php";
-			} else
-				window.location = "deletar_usuario.php?CodUsuario=" + id;
-		}
-	</script>
+    <script type="text/javascript">
+    function confirmarExclusao(id) {
+        var resposta = confirm(
+            "Tem certeza que quer excluir o registro? Se o usuário a ser excluído estiver logado, a conexão será derrubada."
+            );
+        if (resposta == false) {
+            window.location = "listar_usuario.php";
+        } else
+            window.location = "deletar_usuario.php?CodUsuario=" + id;
+    }
+    </script>
 
-	    
+        
 </head>
 
 <body>
-	<div class="container">
-	<?php include "../navbar.php"?>
-	</div>
-	<div class="container text-center">
-	</br>	
-	
-		<table class="table">
-		<h2>Listagem de Usuarios</h2>
-			<thead class="thead-dark">
-				<tr class="text-center">
-					<th scope="col">Nome</th>
-					<th scope="col">Login</th>
-					<th scope="col">Excluir</th>
-					<th scope="col">Editar</th>
-				</tr>
-			</thead>
-			<tbody>
-				<?php
+    <div class="container">
+        <?php include "../navbar.php" ?>
+    </div>
+    <div class="container text-center">
+        </br>
+
+        <table class="table">
+            <h2>Listagem de Usuarios</h2>
+            <thead class="thead-dark">
+                <tr class="text-center">
+                    <th scope="col">Nome</th>
+                    <th scope="col">Login</th>
+                    <th scope="col">Excluir</th>
+                    <th scope="col">Editar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
 				include("../includes/conexao.php");
 				$sql = "select * from usuario";
 				$query = mysqli_query($serv, $sql);
@@ -61,12 +63,12 @@
 					echo "</tr>\n";
 				}
 				?>
-			</tbody>
-		</table>
-	</div>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            </tbody>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html> 

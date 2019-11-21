@@ -1,24 +1,27 @@
-<?php 
-        include("includes/conexao.php"); 
-        $sql = "INSERT INTO fornecedor VALUES ( null, 
-                                               '$_POST[Razao]', 
-                                               '$_POST[Fantasia]',
-                                               '$_POST[Endereco]',
-                                               '$_POST[Complemento]',
-                                               '$_POST[Bairro]',
-                                               '$_POST[Cidade]',
-                                               '$_POST[CEP]',
-                                               '$_POST[UF]',
-                                               '$_POST[Fone]',
-                                               '$_POST[Fax]',
-                                               '$_POST[Email]',
-                                               '$_POST[www]',
-                                               '$_POST[cnpj]',
-                                               '$_POST[InscricaoEstadual]'
-                                                )"; 
-        $query = mysqli_query($serv,$sql); 
-        if ($query) 
-                header("Location: listar_fornecedores.php"); 
-        else 
-                echo "Erro ao inserir registro"; 
-?>  
+<?php
+include("../includes/conexao.php");
+
+$nome = $_POST[Descricao];
+
+$sqlValid  = "SELECT * FROM livro WHERE Descricao = '$nome'";
+
+$queryValid = mysqli_query($serv, $sqlValid);
+
+if (mysqli_num_rows($queryValid) > 0) {
+
+        echo "<script language='javascript' type='text/javascript'>
+        alert('Já existe um livro cadastrado com esse nome!');window.location
+        .href='listar_livro.php';</script>";
+        die();
+} else {
+        $sql = "INSERT INTO livro VALUES ( null, 
+                                               '$nome')";
+
+        $query = mysqli_query($serv, $sql);
+        if ($query)
+                header("Location: listar_livro.php");
+        else
+                echo "<script language='javascript' type='text/javascript'>
+        alert('Erro ao inserir registro');window.location
+        .href='cadastro_livro.html';</script>";
+}

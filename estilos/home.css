@@ -7,7 +7,15 @@ body {
 
 .nav {
   float: left;
-  margin: 50px;
+  margin: 0;
+  height: 100%;
+  width: 250px;
+  border: 1px solid gray;
+  background-color: #d9534f;
+  color: cornflowerblue;
+  border-bottom: cornsilk;
+  box-shadow: 2px 2px 5px cornflowerblue;
+  padding: 1px 1px;
 }
 
 .nav ul {
@@ -19,22 +27,22 @@ body {
 .nav ul li {
   float: left;
   position: relative;
-  display: block;
 }
 .nav ul li a {
-  color: white;
-  background: gray;
+  color: gray;
+  background: white;
   text-decoration: none;
   margin: 0 1px;
-  padding: 15px 20px;
+  padding: 15px 80px;
   border-top: 1px solid gray;
   display: block;
+  border-radius: 20px;
 }
 .nav li ul {
   display: none;
 }
 .nav ul li a:hover {
-  background: black;
+  background: #d9534f;
   color: white;
 }
 .nav li:hover ul {
@@ -46,6 +54,7 @@ body {
   font-size: 12px;
 }
 .nav li:hover a {
-  background: #333;
-  color: #fff;
+  background: #d9534f;
+  color: white;
+  border-left: 4px solid white;
 }

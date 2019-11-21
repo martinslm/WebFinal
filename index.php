@@ -9,15 +9,14 @@
     <meta charset="utf8">
     <title>Biblioteca Online</title>
     <link href="estilos/home.css" rel="stylesheet" />
+
 </head>
 
-<body>
+<body background="imagens/bibliotecas.png">
 
 
-<?php
+    <?php
   include "navbar.php";
-?>
-
-</body>
+  ?> </body>
 
 </html>

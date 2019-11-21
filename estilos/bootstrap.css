@@ -1621,10 +1621,10 @@ pre code {
     border-radius: 20px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .container-cadastros {
-    width: 800px;
-    height: 900px;
+    width: 350px;
+    height: 450px;
     border-radius: 20px;
   }
 }

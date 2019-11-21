@@ -19,4 +19,3 @@ $query = mysqli_query($serv,$sql);
         .href='login.html';</script>";
         die(); 
      }
-?>
