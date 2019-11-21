@@ -12,7 +12,7 @@
 
 </head>
 
-<body background="imagens/bibliotecas.png">
+<body>
 
 
     <?php

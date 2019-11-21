@@ -3,7 +3,7 @@ include("../includes/conexao.php");
 
 $nome = $_POST[Descricao];
 
-$sqlValid  = "SELECT * FROM livro WHERE Descricao = '$nome'";
+$sqlValid  = "SELECT * FROM livro WHERE Descricao = '$descricao'";
 
 $queryValid = mysqli_query($serv, $sqlValid);
 
@@ -15,7 +15,7 @@ if (mysqli_num_rows($queryValid) > 0) {
         die();
 } else {
         $sql = "INSERT INTO livro VALUES ( null, 
-                                               '$nome')";
+                                               '$decricao')";
 
         $query = mysqli_query($serv, $sql);
         if ($query)
@@ -23,5 +23,6 @@ if (mysqli_num_rows($queryValid) > 0) {
         else
                 echo "<script language='javascript' type='text/javascript'>
         alert('Erro ao inserir registro');window.location
-        .href='cadastro_livro.html';</script>";
+        .href='cadastro_livro.php';</script>";
 }
+?>

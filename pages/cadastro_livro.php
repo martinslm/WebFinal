@@ -16,7 +16,7 @@
 <body>
 
         <div class="container-cadastros">
-                <form id="form-group col-md-4" name="form1" method="post" action="cadastro_livro.php">
+                <form id="form-group col-md-4" name="form1" method="post" action="../views/cadastro_livro.php">
                         <br />
                         <legend>
                                 <center>
@@ -24,30 +24,32 @@
                                 </center>
                         </legend>
                         <input type="text" name="Descricao" id="Descricao" class="form-control"
-                                placeholder="Descrição do livro" minlength="20" maxlength="20" required />
+                                placeholder="Descrição do livro" maxlength="20" required />
                         <br />
                         <!--Ver como trazer os dados-->
                         <select type="select" class="form-control" name="autor" required>
-                                <option value="">Autor</option>
+                                <?php
+                                include "../views/selectautor.php";
+                       
+                                ?>
                         </select>
                         <br />
-                        <select class="form-control" name="autor" required>
-                                <option value="">Categoria</option>
-                        </select>
-                        <br />
-                        <select class="form-control" name="autor" required>
-                                <option value="">Filial</option>
-                        </select>
-                        <br />
-                        <select class="form-control" name="autor" required>
-                                <option value="">Livro</option>
+                        <select class="form-control" name="caregoria" required>
+                        <?php
+                                include "../views/selectcategoria.php";
+                       
+                                ?>
                         </select>
                         <br />
                         <center>
                                 <button class="btn btn-lg btn-danger btn block" type="submit"
                                         name="enviar">Cadastrar</button>
                         </center>
+                        
                 </form>
+        </div>
+        <div class="nav">
+        <li><a href="../index.php"> Home</a> </li>
         </div>
 </body>
 

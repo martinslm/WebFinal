@@ -6,10 +6,11 @@ body {
 }
 
 .nav {
+  position: absolute;
   float: left;
   margin: 0;
   height: 100%;
-  width: 250px;
+  width: 200px;
   border: 1px solid gray;
   background-color: #d9534f;
   color: cornflowerblue;
@@ -27,16 +28,21 @@ body {
 .nav ul li {
   float: left;
   position: relative;
+  text-decoration: none;
 }
 .nav ul li a {
   color: gray;
   background: white;
   text-decoration: none;
   margin: 0 1px;
-  padding: 15px 80px;
+  padding: 20px 80px;
   border-top: 1px solid gray;
   display: block;
-  border-radius: 20px;
+  border-radius: 0;
+  font-family: sans-serif;
+  font-size: 12px;
+  transition: all 0.2s linear;
+  border-bottom: 2px solid #d9534f;
 }
 .nav li ul {
   display: none;
@@ -56,5 +62,5 @@ body {
 .nav li:hover a {
   background: #d9534f;
   color: white;
-  border-left: 4px solid white;
+  border-left: 1px solid white;
 }
