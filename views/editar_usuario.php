@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf8">
-            <title>alterar</title>
+            <title>Alterar dados do usuário</title>
     <link href="estilos/main.css" rel="stylesheet" type="text/css" />
     <link href="../estilos/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="../estilos/signin.css" rel="stylesheet" />
@@ -18,14 +18,14 @@
 <body>
 
     <?php
-        include("../includes/conexao.php");
-        $sql = "select * from usuario where idUsuario='$_GET[CodUsuario]'";
-        $query = mysqli_query($serv, $sql);
-        $linha = mysqli_fetch_array($query);
-        ?>
+    include("../includes/conexao.php");
+    $sql = "select * from usuario where idUsuario='$_GET[CodUsuario]'";
+    $query = mysqli_query($serv, $sql);
+    $linha = mysqli_fetch_array($query);
+    ?>
 
-    <div class="container-cadastros">
-        <form id="form-group col-md-4" name="form1" method="post" action="alterar_autor.php">
+    <div class="container-user">
+        <form id="form-group col-md-4" name="form1" method="post" action="alterar_usuario.php">
             <br />
             <legend>
                 <center>
@@ -34,12 +34,14 @@
             </legend>
             <input class="form-control" name="IdUsuario" id="IdUsuario" value="<?php echo $linha['idUsuario']; ?>"
                 type="hidden" />
-            <input class="form-control" type="text" name="Nome" id="Nome" value="<?php echo $linha['nome']; ?>" /><br />
-            <input class="form-control" type="text" name="Login" id="Login"
+            <input class="form-control" type="text" name="Nome" id="Nome" maxlength="50"
+                value="<?php echo $linha['nome']; ?>" /><br />
+            <input class="form-control" type="text" name="Login" id="Login" maxlength="20"
                 value="<?php echo $linha['login']; ?>" /><br />
-            <input class="form-control" type="password" name="Senha" id="Senha"
+            <input class="form-control" type="password" name="Senha" id="Senha" minlength="8" maxlength="50"
                 value="<?php echo $linha['senha']; ?>" /><br />
-            <button class="btn btn-lg btn-danger btn block" type="submit" name="enviar">Alterar</button>
+            <center><button class="btn btn-lg btn-danger btn block" type="submit" name="enviar">Alterar</button>
+            </center>
         </form>
     </div>
 

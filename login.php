@@ -10,7 +10,7 @@ $query = mysqli_query($serv, $sql);
 if (mysqli_num_rows($query) > 0) {
 
    setcookie("login", $login, time() + 3600);
-   header("Location: ../index.php");
+   header("Location: index.php");
 } else {
    echo "<script language='javascript' type='text/javascript'>
         alert('Login e/ou senha incorretos');window.location

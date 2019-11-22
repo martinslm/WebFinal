@@ -1,45 +1,46 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: white;
+  background-color: #d9534f;
   font-family: sans-serif;
 }
 
 .nav {
-  position: absolute;
-  float: left;
-  margin: 0;
-  height: 100%;
-  width: 200px;
+  height: 80px;
+  width: auto;
+  text-align: center;
+  line-height: 30px;
   border: 1px solid gray;
-  background-color: #d9534f;
-  color: cornflowerblue;
+  background-color: white;
   border-bottom: cornsilk;
   box-shadow: 2px 2px 5px cornflowerblue;
-  padding: 1px 1px;
-  display: inline-block;
+  padding: 0;
+  display: block;
 }
 
 .nav ul {
   padding: 0;
+  display: block;
+  margin: 15px 100px;
 }
 .nav ul li {
   float: left;
   position: relative;
   text-decoration: none;
+  display: block;
 }
 .nav ul li a {
-  color: gray;
-  background: white;
+  display: block;
+  color: white;
+  background: #d9534f;
   text-decoration: none;
   margin: 0 1px;
-  padding: 20px 80px;
+  padding: 2px 40px;
   border-top: 1px solid gray;
-  display: block;
-  border-radius: 0;
+  border-radius: 10px;
   font-family: sans-serif;
   font-size: 12px;
-  transition: all 0.2s linear;
+  transition: 0.2s linear;
   border-bottom: 2px solid #d9534f;
 }
 .nav li ul {
@@ -48,20 +49,22 @@ body {
 .nav ul li a:hover {
   background: #d9534f;
   color: white;
+  display: block;
 }
 .nav li:hover ul {
   display: block;
   position: relative;
 }
 .nav li:hover li {
-  float: none;
+  display: block;
+  float: left;
   font-size: 12px;
 }
 .nav li:hover a {
-  background: #d9534f;
-  color: white;
-  border-left: 1px solid white;
+  display: block;
 }
-.nav ul li a ul {
-  margin-left: 202px;
+.sair {
+  position: relative;
+  float: left;
+  margin: 0px 200px;
 }

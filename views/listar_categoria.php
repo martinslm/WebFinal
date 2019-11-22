@@ -21,9 +21,9 @@
 </head>
 
 <body>
-    <div class="container">
-        <?php include "../navbar.php" ?>
-    </div>
+    <span>
+        <center><a href="../index.php">Voltar</a></center>
+    </span>
     <div class="container text-center">
         </br>
 
@@ -39,24 +39,24 @@
             <tbody>
 
                 <?php
-				include("../includes/conexao.php");
-				$sql = "select * from categoria";
-				$query = mysqli_query($serv, $sql);
+                include("../includes/conexao.php");
+                $sql = "select * from categoria";
+                $query = mysqli_query($serv, $sql);
 
-				while ($linha = mysqli_fetch_array($query)) {
-					echo "<tr>";
-					echo "<td>$linha[DescricaoCategoria]      </td>";
-					echo "<td style='text-align:center'>";
-					echo "<a href='javascript:confirmarExclusao(" . $linha['idCategoria'] . ");'>
+                while ($linha = mysqli_fetch_array($query)) {
+                    echo "<tr>";
+                    echo "<td>$linha[DescricaoCategoria]      </td>";
+                    echo "<td style='text-align:center'>";
+                    echo "<a href='javascript:confirmarExclusao(" . $linha['idCategoria'] . ");'>
 		        <img src='../imagens/deletar.png' border='0' width='16' height='16' /></a>";
-					echo "</td>";
-					echo "<td style='text-align:center'>";
-					echo "<a href='editar_categoria.php?CodCategoria=" . $linha['idCategoria'] . "'>";
-					echo "<img src='../imagens/editar.png' border='0' width='16' height='16' /></a>";
-					echo "</td>";
-					echo "</tr>\n";
-				}
-				?>
+                    echo "</td>";
+                    echo "<td style='text-align:center'>";
+                    echo "<a href='editar_categoria.php?CodCategoria=" . $linha['idCategoria'] . "'>";
+                    echo "<img src='../imagens/editar.png' border='0' width='16' height='16' /></a>";
+                    echo "</td>";
+                    echo "</tr>\n";
+                }
+                ?>
             </tbody>
         </table>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>

@@ -1079,8 +1079,8 @@ th {
 html {
   font-size: 10px;
 
-  -webkit-tap-highlight-color: rgb(0, 0, 0);
-  background-color: #000;
+  -webkit-tap-highlight-color: #d9534f;
+  background-color: #d9534f;
 }
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1617,14 +1617,14 @@ pre code {
 @media (min-width: 350px) {
   .container-user {
     width: 400px;
-    height: 320px;
+    height: 350px;
     border-radius: 20px;
   }
 }
 @media (min-width: 992px) {
   .container-cadastros {
     width: 350px;
-    height: 450px;
+    height: 250px;
     border-radius: 20px;
   }
 }
@@ -1638,6 +1638,14 @@ pre code {
 @media (min-width: 992px) {
   .container {
     width: 970px;
+    background-color: white;
+    border-radius: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .container-cadastro {
+    width: 300px;
+    height: 300px;
     background-color: white;
     border-radius: 20px;
   }

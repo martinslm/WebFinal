@@ -25,4 +25,3 @@ else
 	$query = mysqli_query($serv,$sql); 
 	header("Location:listar_autor.php"); 
 }
-?>  

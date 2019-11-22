@@ -15,14 +15,13 @@ if (mysqli_num_rows($queryValid) > 0) {
         die();
 } else {
         $sql = "INSERT INTO livro VALUES ( null, 
-                                               '$decricao')";
+                                               '$descricao')";
 
         $query = mysqli_query($serv, $sql);
         if ($query)
-                header("Location: listar_livro.php");
+                header("Location: ../index.php");
         else
                 echo "<script language='javascript' type='text/javascript'>
         alert('Erro ao inserir registro');window.location
         .href='cadastro_livro.php';</script>";
 }
-?>

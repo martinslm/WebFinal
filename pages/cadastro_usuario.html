@@ -1,10 +1,10 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-br">
-    
+
 
 <head>
         <meta charset="utf8">
-                <title>Cadastro</title>
+        <title>Cadastro de Usuário</title>
         <link href="../estilos/bootstrap.css" rel="stylesheet" />
         <link href="../estilos/signin.css" rel="stylesheet" />
 </head>
@@ -22,13 +22,16 @@
                                 title="Preencha o campo Nome" required />
                         <br />
                         <input type="text" name="Login" id="Login" class="form-control" placeholder="Login (Usuário)"
-                                required />
+                                maxlength="20" required />
                         <br />
                         <input type="password" name="Senha" id="Senha" class="form-control" placeholder="Senha"
-                                minlength="8" maxlength="8" required />
+                                minlength="8" maxlength="50" required />
                         <br />
                         <center><button class="btn btn-lg btn-danger btn block" type="submit" name="enviar"
                                         value="Cadastrar">Cadastrar</button></center>
+                        <span>
+                                <center><a href="../login.php">Voltar</a></center>
+                        </span>
                 </form>
         </div>
 </body>
