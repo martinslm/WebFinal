@@ -17,13 +17,11 @@ body {
   border-bottom: cornsilk;
   box-shadow: 2px 2px 5px cornflowerblue;
   padding: 1px 1px;
+  display: inline-block;
 }
 
 .nav ul {
-  list-style: none;
-  text-align: center;
   padding: 0;
-  margin: 0;
 }
 .nav ul li {
   float: left;
@@ -63,4 +61,7 @@ body {
   background: #d9534f;
   color: white;
   border-left: 1px solid white;
+}
+.nav ul li a ul {
+  margin-left: 202px;
 }
