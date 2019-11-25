@@ -29,9 +29,6 @@
         placeholder="Descrição da categoria" maxlength="50" required /> <br />
         <center><button class="btn btn-lg btn-danger btn block" type="submit"
         name="enviar">Cadastrar</button></center>
-        <span>
-        <center><a href="../index.php">Voltar</a></center>
-        </span>
         </form>
     </div>
     </body>

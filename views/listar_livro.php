@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-br">
     
 
@@ -6,7 +7,12 @@
             <title>Listagem de Livros</title>
     <link href="estilos/main.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link href="../estilos/home.css" rel="stylesheet" />
+    <link href="../estilos/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="../estilos/signin.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
     <script type="text/javascript">
     function confirmarExclusao(id) {
@@ -22,9 +28,8 @@
 </head>
 
 <body>
-    <span>
-        <center><a href="../index.php">Voltar</a></center>
-    </span>
+<?php include "../navbar.php";?>
+
     <div class="container text-center">
         </br>
         <table class="table">
@@ -60,9 +65,6 @@
                 ?>
             </tbody>
         </table>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     </div>
 </body>
 

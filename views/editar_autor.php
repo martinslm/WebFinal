@@ -1,6 +1,6 @@
+<!DOCTYPE html>
 <html lang="pt-br">
-    
-
+   
 <head>
     <meta charset="utf8">
             <title>Alterar dados do autor</title>
@@ -15,7 +15,7 @@
 </head>
 
 <body>
-
+<?php include "../navbar.php";?>
     <?php
         include("../includes/conexao.php");
         $sql = "select * from autor where idAutor='$_GET[CodAutor]'";

@@ -25,5 +25,5 @@
         else 
                 echo "<script language='javascript' type='text/javascript'>
         alert('Erro ao inserir registro');window.location
-        .href='cadastro_categoria.html';</script>"; 
+        .href='cadastro_categoria.php';</script>"; 
       }

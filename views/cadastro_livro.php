@@ -15,7 +15,10 @@ if (mysqli_num_rows($queryValid) > 0) {
         die();
 } else {
         $sql = "INSERT INTO livro VALUES ( null, 
-                                               '$descricao')";
+                                               '$descricao',
+                                               '$IdAutor',
+                                               '$IdCategoria',
+                                               '$idFilial',)";
 
         $query = mysqli_query($serv, $sql);
         if ($query)

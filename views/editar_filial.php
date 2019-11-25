@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-br">
     
 
@@ -16,9 +17,7 @@
 </head>
 
 <body>
-
-
-
+<?php include "../navbar.php";?>
     <?php
     include("../includes/conexao.php");
     $sql = "select * from filial where idFilial='$_GET[CodFilial]'";

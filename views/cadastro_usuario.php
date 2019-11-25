@@ -12,7 +12,7 @@ if (mysqli_num_rows($queryValid) > 0) {
 
         echo "<script language='javascript' type='text/javascript'>
         alert('Já existe um usuário cadastrado para este login! Por favor informe um outro login.');window.location
-        .href='../pages/cadastro_usuario.html';</script>";
+        .href='../pages/cadastro_usuario.php';</script>";
         die();
 } else {
         $sql = "INSERT INTO usuario VALUES ( null, 
@@ -26,5 +26,5 @@ if (mysqli_num_rows($queryValid) > 0) {
         else
                 echo "<script language='javascript' type='text/javascript'>
         alert('Erro ao inserir registro');window.location
-        .href='../pages/cadastro_usuario.html';</script>";
+        .href='../pages/cadastro_usuario.php';</script>";
 }

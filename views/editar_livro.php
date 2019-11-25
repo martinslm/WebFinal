@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-br">
     
 
@@ -15,17 +16,17 @@
 </head>
 
 <body>
-
+<?php include "../navbar.php";?>
 
 
     <?php
     include("includes/conexao.php");
-    $sql = "select * from fornecedor where CodFornecedor='$_GET[CodFornecedor]'";
+    $sql = "select * from livro where idLivro='$_GET[idLivro]'";
     $query = mysqli_query($serv, $sql);
     $linha = mysqli_fetch_array($query);
     ?>
 
-    <form id="form1" name="form1" method="post" action="alterar_fornecedor.php">
+    <form id="form1" name="form1" method="post" action="alterar_livro.php">
         <div class="container-cadastros">
             <form id="form-group col-md-4" name="form1" method="post" action="alterar_autor.php">
                 <br />

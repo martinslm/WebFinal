@@ -6,7 +6,7 @@
         <li><a href="#"> Usuários</a>
 
             <ul>
-                <li><a href="pages/cadastro_usuario.html" target="_self">Cadastro de usuário</a></li>
+                <li><a href="pages/cadastro_usuario.php" target="_self">Cadastro de usuário</a></li>
                 <li><a href="views/listar_usuario.php">Listar Usuário</a></li>
             </ul>
         </li>
@@ -14,7 +14,7 @@
         <li><a href="#"> Filiais</a>
 
             <ul>
-                <li><a href="pages/cadastro_filial.html">Cadastro de Filial</a></li>
+                <li><a href="pages/cadastro_filial.php">Cadastro de Filial</a></li>
                 <li><a href="views/listar_filial.php">Listar Filiais</a></li>
             </ul>
         </li>
@@ -22,7 +22,7 @@
         <li><a href="#"> Categoria</a>
 
             <ul>
-                <li><a href="pages/cadastro_categoria.html">Cadastro de Categoria</a></li>
+                <li><a href="pages/cadastro_categoria.php">Cadastro de Categoria</a></li>
                 <li><a href="views/listar_categoria.php">Listar Categorias</a></li>
             </ul>
         </li>
@@ -30,7 +30,7 @@
         <li><a href="#"> Autores</a>
 
             <ul>
-                <li><a href="pages/cadastro_autor.html">Cadastro de Autor</a></li>
+                <li><a href="pages/cadastro_autor.php">Cadastro de Autor</a></li>
                 <li><a href="views/listar_autor.php">Listar Autores</a></li>
             </ul>
         </li>

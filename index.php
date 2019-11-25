@@ -10,7 +10,8 @@
 	<title>Biblioteca Online</title>
 	<!-- ISSO É DECLARADO PARA O BOOTSTRAP RODAR-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="estilos/main.css" rel="stylesheet" type="text/css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<!-- FIM | ISSO É DECLARADO PARA O BOOTSTRAP RODAR-->
@@ -21,7 +22,7 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Site do Andi</a>
+      <a class="navbar-brand" href="#">Biblioteca Online</a>
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Home</a></li>
@@ -59,38 +60,21 @@
             <li><a href="views/listar_livro.php">Listar Livros</a></li>
         </ul>
       </li>
-
     </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="login.php" >Sair</a>
+        </li>
+
+      </ul>
   </div>
+  
 </nav>
+
 <!-- FIM MENU -->	
-<div>
-  <h1>Menuzinho</h1>
-  <h2>Rola ai</h2>
-
-  <p>Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar..</p>
-  <p>Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar..</p>
-  <p>Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar..</p>
-  <p>Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar..</p>
-  <p>Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar..</p>
-  <p>Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar..</p>
-  <p>Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar..</p>
-  <p>Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar..</p>
-  <p>Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar..</p>
-  <p>Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar..</p>
-  <p>Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar..</p>
-  <p>Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar..</p>
-  <p>Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar..</p>
-  <p>Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar..</p>
-  <p>Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar..</p>
-  <p>Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar..</p>
-  <p>Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar..</p>
-  <p>Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar..</p>
-  <p>Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar..</p>
-  <p>Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar Andi Gay aprende a edentar..</p>
+<div class="biblio">
+<br />>
+  <center><h1>Bem-Vindo a sua Biblioteca</h1></center>
 </div>
-
-
 </body>
 
 </html>

@@ -29,7 +29,13 @@
             <input type="text" name="Descricao" id="Descricao" class="form-control" placeholder="Descrição do livro"
                 maxlength="20" required />
             <br />
+            <select type="select" class="form-control" name="filial" required>
+                <?php
+                include "../views/selectfilial.php";
 
+                ?>
+            </select>
+            <br />
             <select type="select" class="form-control" name="autor" required>
                 <?php
                 include "../views/selectautor.php";
@@ -47,10 +53,6 @@
             <center>
                 <button class="btn btn-lg btn-danger btn block" type="submit" name="enviar">Cadastrar</button>
             </center>
-            <span>
-                <center><a href="../index.php">Voltar</a></center>
-            </span>
-
         </form>
     </div>
 </body>

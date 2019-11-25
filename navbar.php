@@ -53,10 +53,10 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Site do Andi</a>
+      <a class="navbar-brand" href="../index.php">Biblioteca Online</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
+      <li class="active"><a href="../index.php">Home</a></li>
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Usuários<span class="caret"></span></a>
         <ul class="dropdown-menu">
             <li><a href="cadastro_usuario.php" target="_self">Cadastro de usuário</a></li>

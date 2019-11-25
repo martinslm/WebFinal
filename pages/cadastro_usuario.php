@@ -36,9 +36,7 @@
                         <br />
                         <center><button class="btn btn-lg btn-danger btn block" type="submit" name="enviar"
                                         value="Cadastrar">Cadastrar</button></center>
-                        <span>
-                                <center><a href="../login.php">Voltar</a></center>
-                        </span>
+
                 </form>
         </div>
 </body>
