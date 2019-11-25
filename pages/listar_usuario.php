@@ -3,11 +3,17 @@
     
 
 <head>
+    <?php include "../navbar.php"; ?>
     <meta charset="utf8">
             <title>Listagem de Usuários</title>
-    <link href="../estilos/main.css" rel="stylesheet" type="text/css" />
+    <link href="estilos/main.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link href="../estilos/home.css" rel="stylesheet" />
+    <link href="../estilos/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="../estilos/signin.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
     <script type="text/javascript">
     function confirmarExclusao(id) {
@@ -24,9 +30,8 @@
         
 </head>
 
-<body>
-<?php include "../navbar.php";?>
 
+<body>
     </div>
     <div class="container text-center">
         </br>

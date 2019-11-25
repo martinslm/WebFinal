@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-   
+  
+
 <head>
     <meta charset="utf8">
             <title>Alterar dados do autor</title>
@@ -15,13 +16,13 @@
 </head>
 
 <body>
-<?php include "../navbar.php";?>
+    <?php include "../navbar.php"; ?>
     <?php
-        include("../includes/conexao.php");
-        $sql = "select * from autor where idAutor='$_GET[CodAutor]'";
-        $query = mysqli_query($serv, $sql);
-        $linha = mysqli_fetch_array($query);
-        ?>
+    include("../includes/conexao.php");
+    $sql = "select * from autor where idAutor='$_GET[CodAutor]'";
+    $query = mysqli_query($serv, $sql);
+    $linha = mysqli_fetch_array($query);
+    ?>
 
     <div class="container-cadastros">
         <form id="form-group col-md-4" name="form1" method="post" action="alterar_autor.php">
