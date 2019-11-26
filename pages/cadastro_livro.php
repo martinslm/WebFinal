@@ -28,21 +28,21 @@
             <input type="text" name="Descricao" id="Descricao" class="form-control" placeholder="Descrição do livro"
                 maxlength="20" required />
             <br />
-            <select type="select" class="form-control" name="filial" required>
+            <select type="select" class="form-control" name="Filial" id="fil" required>
                 <?php
                 include "../views/selectfilial.php";
 
                 ?>
             </select>
             <br />
-            <select type="select" class="form-control" name="autor" required>
+            <select type="select" class="form-control" name="Autor" id="aut" required>
                 <?php
                 include "../views/selectautor.php";
 
                 ?>
             </select>
             <br />
-            <select class="form-control" name="categoria" required>
+            <select class="form-control" name="Categoria" id="cat" required>
                 <?php
                 include "../views/selectcategoria.php";
 

@@ -7,6 +7,6 @@ $query = mysqli_query($serv, $sql);
 
 while ($linha = mysqli_fetch_array($query)) {
 
-    echo "<option>$linha[DescricaoCategoria]</option>";
+    echo "<option value=$linha[IdCategoria]>$linha[DescricaoCategoria]</option>";
 
 }
