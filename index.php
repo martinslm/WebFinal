@@ -67,7 +67,7 @@
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="login.php">Sair</a>
+                <li><a href="login.html">Sair</a>
                 </li>
 
             </ul>

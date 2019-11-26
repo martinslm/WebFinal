@@ -20,7 +20,6 @@
 
     <div class="container">
         <form id="form-biblio" name="form1" method="post" action="../views/cadastro_livro.php">
-            <br />
             <legend>
                 <center>
                     <h2>Cadastro de Livro</h2>
