@@ -14,8 +14,8 @@
 </head>
 
 <body>
-        <!-- ISSO ADICIONA O MENU NA PÁGINA -->
-    <?php include "../navbar.php";?>
+    <!-- ISSO ADICIONA O MENU NA PÁGINA -->
+    <?php include "../navbar.php"; ?>
     <!-- FIM | ISSO ADICIONA O MENU NA PÁGINA -->
 
     <div class="container">
@@ -43,7 +43,7 @@
                 ?>
             </select>
             <br />
-            <select class="form-control" name="caregoria" required>
+            <select class="form-control" name="categoria" required>
                 <?php
                 include "../views/selectcategoria.php";
 

@@ -23,7 +23,7 @@
         if (resposta == false) {
             window.location = "listar_usuario.php";
         } else
-            window.location = "deletar_usuario.php?CodUsuario=" + id;
+            window.location = "../views/deletar_usuario.php?CodUsuario=" + id;
     }
     </script>
 

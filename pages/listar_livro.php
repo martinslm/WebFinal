@@ -20,7 +20,7 @@
         if (resposta == false) {
             window.location = "listar_livro.php";
         } else
-            window.location = "deletar_livro.php?Descricao=" + id;
+            window.location = "../views/deletar_livro.php?Descricao=" + id;
     }
     </script>
 
@@ -28,7 +28,7 @@
 </head>
 
 <body>
-<?php include "../navbar.php";?>
+    <?php include "../navbar.php"; ?>
 
     <div class="container text-center">
         </br>

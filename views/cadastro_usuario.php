@@ -22,7 +22,7 @@ if (mysqli_num_rows($queryValid) > 0) {
                                                 )";
         $query = mysqli_query($serv, $sql);
         if ($query)
-                header("Location: ../login.php");
+                header("Location: ../index.php");
         else
                 echo "<script language='javascript' type='text/javascript'>
         alert('Erro ao inserir registro');window.location

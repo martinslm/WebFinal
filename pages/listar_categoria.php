@@ -18,16 +18,16 @@
     function confirmarExclusao(id) {
         var resposta = confirm("Tem certeza que quer excluir o registro?");
         if (resposta == false) {
-            window.location = "listar_cateogoria.php";
+            window.location = "listar_categoria.php";
         } else
-            window.location = "deletar_categoria.php?CodCategoria=" + id;
+            window.location = "../views/deletar_categoria.php?CodCategoria=" + id;
     }
     </script>
         
 </head>
 
 <body>
-<?php include "../navbar.php";?>
+    <?php include "../navbar.php"; ?>
 
     <div class="container text-center">
         </br>

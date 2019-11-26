@@ -11,7 +11,7 @@ if (mysqli_num_rows($queryValid) > 0) {
 
   echo "<script language='javascript' type='text/javascript'>
         alert('Já existe uma filial cadastrada com esse nome!');window.location
-        .href='../views/listar_filial.php';</script>";
+        .href='../pages/cadastro_filial.php';</script>";
   die();
 } else {
   $sql = "INSERT INTO filial VALUES ( null, 
@@ -19,7 +19,7 @@ if (mysqli_num_rows($queryValid) > 0) {
 
   $query = mysqli_query($serv, $sql);
   if ($query)
-    header("Location: ../index.php");
+    header("Location: ../pages/listar_filial.php");
   else
     echo "<script language='javascript' type='text/javascript'>
         alert('Erro ao inserir registro');window.location

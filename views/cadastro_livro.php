@@ -11,18 +11,18 @@ if (mysqli_num_rows($queryValid) > 0) {
 
         echo "<script language='javascript' type='text/javascript'>
         alert('Já existe um livro cadastrado com esse nome!');window.location
-        .href='listar_livro.php';</script>";
+        .href='../pages/listar_livro.php';</script>";
         die();
 } else {
         $sql = "INSERT INTO livro VALUES ( null, 
                                                '$descricao',
-                                               '$IdAutor',
-                                               '$IdCategoria',
-                                               '$idFilial',)";
+                                               '$filial',
+                                               '$autor',
+                                               '$categoria',)";
 
         $query = mysqli_query($serv, $sql);
         if ($query)
-                header("Location: ../index.php");
+                header("Location: ../pages/listar_livro.php");
         else
                 echo "<script language='javascript' type='text/javascript'>
         alert('Erro ao inserir registro');window.location
