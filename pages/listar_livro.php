@@ -5,8 +5,8 @@
 <head>
     <meta charset="utf8">
             <title>Listagem de Livros</title>
-    <link href="estilos/main.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!--<link href="estilos/main.css" rel="stylesheet" type="text/css" />-->
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
     <link href="../estilos/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="../estilos/signin.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
@@ -36,7 +36,10 @@
             <h2>Listagem de Livro</h2>
             <thead class="thead-dark">
                 <tr class="text-center">
-                    <th scope="col">Nome</th>
+                    <th scope="col">Nome Livro</th>
+                    <th scope="col">Filial</th>
+                    <th scope="col">Categoria</th>
+                    <th scope="col">Autor</th>
                     <th scope="col">Excluir</th>
                     <th scope="col">Editar</th>
                 </tr>

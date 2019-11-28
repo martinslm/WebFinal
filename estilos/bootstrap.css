@@ -1652,8 +1652,9 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 350px;
+    width: 600px;
     border-radius: 20px;
+    background-color: #222;
   }
 }
 

@@ -6,7 +6,7 @@
     <meta charset="utf8">
             <title>Listagem de Autores</title>
     <link href="estilos/main.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
     <link href="../estilos/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="../estilos/signin.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
@@ -29,7 +29,7 @@
 
 <body>
     <?php include "../navbar.php"; ?>
-    <div class="container">
+    <div class="container text-center">
         </br>
 
         <table class="table">
