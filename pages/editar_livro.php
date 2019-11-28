@@ -38,7 +38,7 @@
                 <input class="form-control" name="IdLivro" id="IdLivro" value="<?php echo $linha['idLivro']; ?>"
                     type="hidden" />
                 <input class="form-control" type="text" name="Nome" id="Nome"
-                    value="<?php echo $linha['descricao']; ?>" /><br />
+                    value="<?php echo $linha['Descricao']; ?>" /><br />
                 <button class="btn btn-lg btn-danger btn block" type="submit" name="enviar">Alterar</button>
             </form>
         </div>

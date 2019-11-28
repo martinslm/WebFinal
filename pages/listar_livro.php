@@ -5,8 +5,7 @@
 <head>
     <meta charset="utf8">
             <title>Listagem de Livros</title>
-    <!--<link href="estilos/main.css" rel="stylesheet" type="text/css" />-->
-    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
+    <link href="estilos/main.css" rel="stylesheet" type="text/css" />
     <link href="../estilos/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="../estilos/signin.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
@@ -30,13 +29,13 @@
 <body>
     <?php include "../navbar.php"; ?>
 
-    <div class="container text-center">
+    <div class="container-livro text-center">
         </br>
         <table class="table">
             <h2>Listagem de Livro</h2>
             <thead class="thead-dark">
                 <tr class="text-center">
-                    <th scope="col">Nome Livro</th>
+                    <th scope="col">Livro</th>
                     <th scope="col">Filial</th>
                     <th scope="col">Categoria</th>
                     <th scope="col">Autor</th>
@@ -47,21 +46,26 @@
             <tbody>
                 <?php
                 include("../includes/conexao.php");
-                $sql = "select * from livro";
+                $sql = "select * from livro a inner join filial b on a.idfilial = b.idFilial 
+                                              inner join categoria c on c.idCategoria = c.IdCategoria 
+                                              inner join autor d on d.idAutor = d.IdAutor";
                 $query = mysqli_query($serv, $sql);
 
                 while ($linha = mysqli_fetch_array($query)) {
                     echo "<tr>";
                     echo "<td>$linha[Descricao]      </td>";
+                    echo "<td>$linha[DescricaoFilial]      </td>";
+                    echo "<td>$linha[DescricaoCategoria]      </td>";
+                    echo "<td>$linha[NomeAutor]      </td>";
                     # inclui uma imagem que se clicada executa o javascript confirmarExclusao 
                     echo "<td style='text-align:center'>";
                     echo "<a href='javascript:confirmarExclusao(" . $linha['Descricao'] . ");'>
-		        <img src='imagens/deletar.png' border='0' width='16' height='16' /></a>";
+		        <img src='../imagens/deletar.png' border='0' width='16' height='16' /></a>";
                     echo "</td>";
                     # inclui uma imagem que se clicada executa a pagina editar_fornecedor.php
                     echo "<td style='text-align:center'>";
                     echo "<a href='editar_livro.php?Descricao=" . $linha['Descricao'] . "'>";
-                    echo "<img src='imagens/editar.png' border='0' width='16' height='16' /></a>";
+                    echo "<img src='../imagens/editar.png' border='0' width='16' height='16' /></a>";
                     echo "</td>";
                     echo "</tr>\n";
                 }

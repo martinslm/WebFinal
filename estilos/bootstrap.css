@@ -186,6 +186,7 @@ table {
 td,
 th {
   padding: 0;
+  color: black;
 }
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
@@ -1188,7 +1189,7 @@ h6,
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
-  color: inherit;
+  color: black;
 }
 h1 small,
 h2 small,
@@ -1614,6 +1615,14 @@ pre code {
   margin-left: auto;
   background-color: white;
 }
+.container-livro
+{
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+}
 @media (min-width: 350px) {
   .container-user {
     width: 400px;
@@ -1652,9 +1661,17 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
+    width: 350px;
+    border-radius: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-livro {
     width: 600px;
     border-radius: 20px;
-    background-color: #222;
+    background-color: white;
+    border-color: #000;
+    ;
   }
 }
 
@@ -2304,11 +2321,12 @@ table {
 caption {
   padding-top: 8px;
   padding-bottom: 8px;
-  color: #777;
+  color: black;
   text-align: left;
 }
 th {
   text-align: left;
+  color: black;
 }
 .table {
   width: 100%;
@@ -2324,11 +2342,11 @@ th {
   padding: 8px;
   line-height: 1.42857143;
   vertical-align: top;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid black;
 }
 .table > thead > tr > th {
   vertical-align: bottom;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 2px solid black;
 }
 .table > caption + thead > tr:first-child > th,
 .table > colgroup + thead > tr:first-child > th,
@@ -2339,7 +2357,7 @@ th {
   border-top: 0;
 }
 .table > tbody + tbody {
-  border-top: 2px solid #ddd;
+  border-top: 2px solid black;
 }
 .table .table {
   background-color: #fff;

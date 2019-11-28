@@ -24,17 +24,16 @@
                     <h2>Cadastro de usuário</h2>
                 </center>
             </legend>
-            <input type="text" name="Nome" id="Nome" class="form-control" placeholder="Nome" maxlength="50"
-                title="Preencha o campo Nome" required />
+            <input type="text" name="Nome" id="Nome" class="form-control" placeholder="Nome" maxlength="50" title="Preencha o campo Nome" required />
             <br />
-            <input type="text" name="Login" id="Login" class="form-control" placeholder="Login (Usuário)" maxlength="20"
-                required />
+            <input type="text" name="Login" id="Login" class="form-control" placeholder="Login (Usuário)" maxlength="20" required />
             <br />
-            <input type="password" name="Senha" id="Senha" class="form-control" placeholder="Senha" minlength="8"
-                maxlength="50" required />
+            <input type="password" name="Senha" id="Senha" class="form-control" placeholder="Senha" minlength="8" maxlength="50" required />
             <br />
-            <center><button class="btn btn-lg btn-danger btn block" type="submit" name="enviar"
-                    value="Cadastrar">Cadastrar</button></center>
+            <center><button class="btn btn-lg btn-danger btn block" type="submit" name="enviar" value="Cadastrar">Cadastrar</button></center>
+            <span>
+                <center><a href="../login.php">Voltar</a></center>
+            </span>
 
         </form>
     </div>
